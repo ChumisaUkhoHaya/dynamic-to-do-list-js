@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Create a remove button
         const removeButton = document.createElement('button');
         removeButton.textContent = "Remove";
-        removeButton.className = 'remove-btn';
+        removeButton.classList.add = 'remove-btn';
 
         // Assign the remove function to the button's onclick event
         removeButton.onclick = () => {
@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Clear the input field
         taskInput.value = '';
     }
+
 
     // Attach event listeners
     addButton.addEventListener('click', addTask);
